@@ -8,6 +8,7 @@
         "build": "cross-env BUILD_TYPE=dev vite build",
         "serve": "vite preview --port 3000",
         "build-prod": "cross-env BUILD_TYPE=prod vite build",
+        "server": "json-server --port 1111 ./db.json",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
@@ -21,6 +22,7 @@
         "vite-aliases": "^0.8.7"
     },
     "dependencies": {
+        "json-server": "^0.17.0",
         "route-parser": "^0.0.5"
     }
 }
